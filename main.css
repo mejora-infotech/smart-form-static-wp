@@ -1,0 +1,219 @@
+    .hide-all {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    
+    .graphic {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        fill: none;
+        stroke-width: 1px;
+    }
+    
+    .input--nao {
+        overflow: hidden;
+        padding-top: 15px;
+    }
+    
+    .input__field--nao {
+        padding: 15px 0em 0px !important;
+        width: 100%;
+        background: transparent;
+        color: #9da8b2;
+        font-size: 1.25em;
+        margin-bottom: 0 !important;
+        padding: 15px 0 15px !important;
+        border: none !important;
+    }
+    
+    .input__label--nao {
+        position: absolute;
+        top: 0.95em;
+        font-size: 0.85em;
+        left: 0;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0em;
+        pointer-events: none;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transition: -webkit-transform 0.2s 0.15s, color 1s;
+        transition: transform 0.2s 0.15s, color 1s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    
+    .graphic--nao {
+        stroke: #92989e;
+        pointer-events: none;
+        -webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
+        transition: transform 0.7s, stroke 0.7s;
+        -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+        transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    }
+    
+    .input__field--nao:focus + .input__label--nao,
+    .input--filled .input__label--nao {
+        color: #333;
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    
+    .input__field--nao:focus ~ .graphic--nao,
+    .input--filled .graphic--nao {
+        stroke: #333;
+        -webkit-transform: translate3d(-66.6%, 0, 0);
+        transform: translate3d(-66.6%, 0, 0);
+    }
+    /* CSS only version */
+    
+    .radios {
+        margin-bottom: 15px;
+    }
+    
+    .radios input[type=radio] {
+        margin: 10px;
+    }
+    
+    .radios input[type=radio] + label {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px 15px;
+        background-color: #fff;
+        cursor: pointer;
+        border: 2px solid #333;
+        transition: 0.4s all ease-in-out;
+        position: relative;
+        z-index: 9;
+        margin-left: -32px;
+    }
+    
+    .radios input[type=radio] + label:hover {
+        background: #777;
+        color: #fff;
+    }
+    
+    .radios input[type=radio]:checked + label {
+        background-image: none;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .radios label {
+        font-size: 0.85em;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .error_message {
+        color: red;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    /*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Custom file
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+    
+    .custom-file-upload-hidden {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        left: -9999px;
+    }
+    
+    .custom-file-upload {
+        display: block;
+        width: auto;
+        font-size: 16px;
+        /*        margin-top: 30px;*/
+    }
+    
+    .custom-file-upload:after,
+    .custom-file-upload:before {
+        content: "";
+        display: table;
+        line-height: 1;
+    }
+    
+    .custom-file-upload:after {
+        clear: both;
+    }
+    
+    .custom-file-upload label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .file-upload-wrapper {
+        position: relative;
+        margin-bottom: 5px;
+    }
+    
+    .file-upload-input {
+        width: 190px;
+        color: #fff;
+        font-size: 16px;
+        padding: 11px 17px;
+        border: none;
+        background-color: #333333;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        float: left;
+        /* IE 9 Fix */
+    }
+    
+    .file-upload-input:hover,
+    .file-upload-input:focus {
+        background-color: #333333;
+        outline: none;
+    }
+    
+    .file-upload-button {
+        cursor: pointer;
+        display: inline-block;
+        color: #222;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 9px 20px;
+        border: 2px solid #222;
+        ;
+        margin-left: -1px;
+        background-color: transparent;
+        float: left;
+        /* IE 9 Fix */
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    
+    .file-upload-button:hover {
+        background-color: #222;
+        color: #fff;
+    }
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    
+    .mejora-career .btn-secc {
+        margin: 20px 0 15px;
+    }
+    
+    .mejora-career .btn-secc input[type=submit] {
+        padding: 10px 25px;
+        min-width: 150px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 2px solid #333;
+        transition: 0.4s all ease-in-out;
+    }
+    
+    .mejora-career .btn-secc input[type=submit]:hover {
+        background: #333;
+        color: #fff;
+    }
